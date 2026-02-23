@@ -1,3 +1,674 @@
 [gd_scene format=3 uid="uid://bslbr22n5lv64"]
 
+[ext_resource type="Script" uid="uid://bg44aea163b0o" path="res://Scripts/squid.gd" id="1_3dryh"]
+[ext_resource type="Texture2D" uid="uid://k8q7q76ka0dr" path="res://PNGs/sand.png" id="1_i6g32"]
+[ext_resource type="Texture2D" uid="uid://c2s2oqgvxw31s" path="res://PNGs/squid0000.png" id="1_wrm1d"]
+[ext_resource type="Texture2D" uid="uid://djrurmku88cnv" path="res://PNGs/squid0001.png" id="2_3dryh"]
+[ext_resource type="Texture2D" uid="uid://bdp2v04nrhhtl" path="res://PNGs/squid0002.png" id="3_wowpa"]
+[ext_resource type="Texture2D" uid="uid://cyrvkirn8bo5m" path="res://PNGs/coral.png" id="5_wowpa"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i6g32"]
+size = Vector2(16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_i6g32"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_wrm1d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_3dryh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_wowpa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_3dryh")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1l0tm"]
+size = Vector2(16, 32)
+
 [node name="Game" type="Node2D" unique_id=936820673]
+
+[node name="Sands" type="Node2D" parent="." unique_id=351278812]
+
+[node name="Sand" type="Sprite2D" parent="Sands" unique_id=1873510765]
+texture = ExtResource("1_i6g32")
+
+[node name="Sand2" type="Sprite2D" parent="Sands" unique_id=31137832]
+position = Vector2(16, 0)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand3" type="Sprite2D" parent="Sands" unique_id=2077972683]
+position = Vector2(16, 16)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand4" type="Sprite2D" parent="Sands" unique_id=273040277]
+position = Vector2(0, 16)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand5" type="Sprite2D" parent="Sands" unique_id=2125224288]
+position = Vector2(-16, 16)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand6" type="Sprite2D" parent="Sands" unique_id=251645154]
+position = Vector2(-16, 0)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand7" type="Sprite2D" parent="Sands" unique_id=642859027]
+position = Vector2(-16, 32)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand8" type="Sprite2D" parent="Sands" unique_id=393103803]
+position = Vector2(0, 32)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand9" type="Sprite2D" parent="Sands" unique_id=1364355288]
+position = Vector2(16, 32)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand10" type="Sprite2D" parent="Sands" unique_id=1999482875]
+position = Vector2(-48, 0)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand11" type="Sprite2D" parent="Sands" unique_id=1958597321]
+position = Vector2(-32, 0)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand12" type="Sprite2D" parent="Sands" unique_id=1463951409]
+position = Vector2(-32, 16)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand13" type="Sprite2D" parent="Sands" unique_id=1374038137]
+position = Vector2(-48, 16)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand14" type="Sprite2D" parent="Sands" unique_id=1992597043]
+position = Vector2(-64, 16)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand15" type="Sprite2D" parent="Sands" unique_id=760679468]
+position = Vector2(-64, 0)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand16" type="Sprite2D" parent="Sands" unique_id=85487907]
+position = Vector2(-64, 32)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand17" type="Sprite2D" parent="Sands" unique_id=1130123837]
+position = Vector2(-48, 32)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand18" type="Sprite2D" parent="Sands" unique_id=234148897]
+position = Vector2(-32, 32)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand19" type="Sprite2D" parent="Sands" unique_id=380895230]
+position = Vector2(-48, -48)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand20" type="Sprite2D" parent="Sands" unique_id=498807852]
+position = Vector2(-32, -48)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand21" type="Sprite2D" parent="Sands" unique_id=1143125783]
+position = Vector2(-32, -32)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand22" type="Sprite2D" parent="Sands" unique_id=2111635223]
+position = Vector2(-48, -32)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand23" type="Sprite2D" parent="Sands" unique_id=1704896743]
+position = Vector2(-64, -32)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand24" type="Sprite2D" parent="Sands" unique_id=1958324130]
+position = Vector2(-64, -48)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand25" type="Sprite2D" parent="Sands" unique_id=1314258163]
+position = Vector2(-64, -16)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand26" type="Sprite2D" parent="Sands" unique_id=499178560]
+position = Vector2(-48, -16)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand27" type="Sprite2D" parent="Sands" unique_id=868406304]
+position = Vector2(-32, -16)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand28" type="Sprite2D" parent="Sands" unique_id=1751513146]
+position = Vector2(0, -48)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand29" type="Sprite2D" parent="Sands" unique_id=484411758]
+position = Vector2(16, -48)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand30" type="Sprite2D" parent="Sands" unique_id=1978355716]
+position = Vector2(16, -32)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand31" type="Sprite2D" parent="Sands" unique_id=1556714000]
+position = Vector2(0, -32)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand32" type="Sprite2D" parent="Sands" unique_id=989836226]
+position = Vector2(-16, -32)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand33" type="Sprite2D" parent="Sands" unique_id=274515525]
+position = Vector2(-16, -48)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand34" type="Sprite2D" parent="Sands" unique_id=904981442]
+position = Vector2(-16, -16)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand35" type="Sprite2D" parent="Sands" unique_id=1448584274]
+position = Vector2(0, -16)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand36" type="Sprite2D" parent="Sands" unique_id=1092181377]
+position = Vector2(16, -16)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand37" type="Sprite2D" parent="Sands" unique_id=969233075]
+position = Vector2(96, 0)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand38" type="Sprite2D" parent="Sands" unique_id=888374050]
+position = Vector2(112, 0)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand39" type="Sprite2D" parent="Sands" unique_id=386827502]
+position = Vector2(112, 16)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand40" type="Sprite2D" parent="Sands" unique_id=1003205406]
+position = Vector2(96, 16)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand41" type="Sprite2D" parent="Sands" unique_id=452602349]
+position = Vector2(80, 16)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand42" type="Sprite2D" parent="Sands" unique_id=24117340]
+position = Vector2(80, 0)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand43" type="Sprite2D" parent="Sands" unique_id=979881557]
+position = Vector2(80, 32)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand44" type="Sprite2D" parent="Sands" unique_id=988319460]
+position = Vector2(96, 32)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand45" type="Sprite2D" parent="Sands" unique_id=1944154814]
+position = Vector2(112, 32)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand46" type="Sprite2D" parent="Sands" unique_id=1102373084]
+position = Vector2(48, 0)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand47" type="Sprite2D" parent="Sands" unique_id=715309296]
+position = Vector2(64, 0)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand48" type="Sprite2D" parent="Sands" unique_id=703525025]
+position = Vector2(64, 16)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand49" type="Sprite2D" parent="Sands" unique_id=2129642220]
+position = Vector2(48, 16)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand50" type="Sprite2D" parent="Sands" unique_id=807335554]
+position = Vector2(32, 16)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand51" type="Sprite2D" parent="Sands" unique_id=1113915946]
+position = Vector2(32, 0)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand52" type="Sprite2D" parent="Sands" unique_id=712634800]
+position = Vector2(32, 32)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand53" type="Sprite2D" parent="Sands" unique_id=1304721270]
+position = Vector2(48, 32)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand54" type="Sprite2D" parent="Sands" unique_id=1376493613]
+position = Vector2(64, 32)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand55" type="Sprite2D" parent="Sands" unique_id=193757848]
+position = Vector2(48, -48)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand56" type="Sprite2D" parent="Sands" unique_id=854685962]
+position = Vector2(64, -48)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand57" type="Sprite2D" parent="Sands" unique_id=1422468263]
+position = Vector2(64, -32)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand58" type="Sprite2D" parent="Sands" unique_id=26755444]
+position = Vector2(48, -32)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand59" type="Sprite2D" parent="Sands" unique_id=2037614040]
+position = Vector2(32, -32)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand60" type="Sprite2D" parent="Sands" unique_id=2131372751]
+position = Vector2(32, -48)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand61" type="Sprite2D" parent="Sands" unique_id=20025094]
+position = Vector2(32, -16)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand62" type="Sprite2D" parent="Sands" unique_id=953083970]
+position = Vector2(48, -16)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand63" type="Sprite2D" parent="Sands" unique_id=1901131529]
+position = Vector2(64, -16)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand64" type="Sprite2D" parent="Sands" unique_id=1097538834]
+position = Vector2(96, -48)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand65" type="Sprite2D" parent="Sands" unique_id=1079516099]
+position = Vector2(112, -48)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand66" type="Sprite2D" parent="Sands" unique_id=140802208]
+position = Vector2(112, -32)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand67" type="Sprite2D" parent="Sands" unique_id=337408847]
+position = Vector2(96, -32)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand68" type="Sprite2D" parent="Sands" unique_id=848168041]
+position = Vector2(80, -32)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand69" type="Sprite2D" parent="Sands" unique_id=1805849416]
+position = Vector2(80, -48)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand70" type="Sprite2D" parent="Sands" unique_id=844838496]
+position = Vector2(80, -16)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand71" type="Sprite2D" parent="Sands" unique_id=1351895965]
+position = Vector2(96, -16)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand72" type="Sprite2D" parent="Sands" unique_id=569366211]
+position = Vector2(112, -16)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand73" type="Sprite2D" parent="Sands" unique_id=1579923966]
+position = Vector2(96, -96)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand74" type="Sprite2D" parent="Sands" unique_id=91765908]
+position = Vector2(112, -96)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand75" type="Sprite2D" parent="Sands" unique_id=1607962924]
+position = Vector2(112, -80)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand76" type="Sprite2D" parent="Sands" unique_id=1182854997]
+position = Vector2(96, -80)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand77" type="Sprite2D" parent="Sands" unique_id=749537593]
+position = Vector2(80, -80)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand78" type="Sprite2D" parent="Sands" unique_id=2070674801]
+position = Vector2(80, -96)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand79" type="Sprite2D" parent="Sands" unique_id=828890026]
+position = Vector2(80, -64)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand80" type="Sprite2D" parent="Sands" unique_id=1547719498]
+position = Vector2(96, -64)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand81" type="Sprite2D" parent="Sands" unique_id=1743018475]
+position = Vector2(112, -64)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand82" type="Sprite2D" parent="Sands" unique_id=539156471]
+position = Vector2(48, -96)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand83" type="Sprite2D" parent="Sands" unique_id=90508967]
+position = Vector2(64, -96)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand84" type="Sprite2D" parent="Sands" unique_id=2132006927]
+position = Vector2(64, -80)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand85" type="Sprite2D" parent="Sands" unique_id=1339942458]
+position = Vector2(48, -80)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand86" type="Sprite2D" parent="Sands" unique_id=921898055]
+position = Vector2(32, -80)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand87" type="Sprite2D" parent="Sands" unique_id=917785682]
+position = Vector2(32, -96)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand88" type="Sprite2D" parent="Sands" unique_id=1912973938]
+position = Vector2(32, -64)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand89" type="Sprite2D" parent="Sands" unique_id=2099272548]
+position = Vector2(48, -64)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand90" type="Sprite2D" parent="Sands" unique_id=268622792]
+position = Vector2(64, -64)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand91" type="Sprite2D" parent="Sands" unique_id=1384371665]
+position = Vector2(48, -144)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand92" type="Sprite2D" parent="Sands" unique_id=244104588]
+position = Vector2(64, -144)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand93" type="Sprite2D" parent="Sands" unique_id=78482023]
+position = Vector2(64, -128)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand94" type="Sprite2D" parent="Sands" unique_id=1505801567]
+position = Vector2(48, -128)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand95" type="Sprite2D" parent="Sands" unique_id=1152583400]
+position = Vector2(32, -128)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand96" type="Sprite2D" parent="Sands" unique_id=1608621137]
+position = Vector2(32, -144)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand97" type="Sprite2D" parent="Sands" unique_id=951064224]
+position = Vector2(32, -112)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand98" type="Sprite2D" parent="Sands" unique_id=1005928814]
+position = Vector2(48, -112)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand99" type="Sprite2D" parent="Sands" unique_id=646060338]
+position = Vector2(64, -112)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand100" type="Sprite2D" parent="Sands" unique_id=2075927219]
+position = Vector2(96, -144)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand101" type="Sprite2D" parent="Sands" unique_id=796146903]
+position = Vector2(112, -144)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand102" type="Sprite2D" parent="Sands" unique_id=1547524721]
+position = Vector2(112, -128)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand103" type="Sprite2D" parent="Sands" unique_id=1288169792]
+position = Vector2(96, -128)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand104" type="Sprite2D" parent="Sands" unique_id=1759108708]
+position = Vector2(80, -128)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand105" type="Sprite2D" parent="Sands" unique_id=1239161983]
+position = Vector2(80, -144)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand106" type="Sprite2D" parent="Sands" unique_id=1825265104]
+position = Vector2(80, -112)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand107" type="Sprite2D" parent="Sands" unique_id=1908512024]
+position = Vector2(96, -112)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand108" type="Sprite2D" parent="Sands" unique_id=1713017044]
+position = Vector2(112, -112)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand109" type="Sprite2D" parent="Sands" unique_id=886420365]
+position = Vector2(0, -96)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand110" type="Sprite2D" parent="Sands" unique_id=469821240]
+position = Vector2(16, -96)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand111" type="Sprite2D" parent="Sands" unique_id=283872468]
+position = Vector2(16, -80)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand112" type="Sprite2D" parent="Sands" unique_id=361613166]
+position = Vector2(0, -80)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand113" type="Sprite2D" parent="Sands" unique_id=1795475805]
+position = Vector2(-16, -80)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand114" type="Sprite2D" parent="Sands" unique_id=968596392]
+position = Vector2(-16, -96)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand115" type="Sprite2D" parent="Sands" unique_id=917828033]
+position = Vector2(-16, -64)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand116" type="Sprite2D" parent="Sands" unique_id=448789105]
+position = Vector2(0, -64)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand117" type="Sprite2D" parent="Sands" unique_id=348033257]
+position = Vector2(16, -64)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand118" type="Sprite2D" parent="Sands" unique_id=276854566]
+position = Vector2(-48, -96)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand119" type="Sprite2D" parent="Sands" unique_id=1260920793]
+position = Vector2(-32, -96)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand120" type="Sprite2D" parent="Sands" unique_id=1702561250]
+position = Vector2(-32, -80)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand121" type="Sprite2D" parent="Sands" unique_id=30818183]
+position = Vector2(-48, -80)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand122" type="Sprite2D" parent="Sands" unique_id=1136004331]
+position = Vector2(-64, -80)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand123" type="Sprite2D" parent="Sands" unique_id=539905430]
+position = Vector2(-64, -96)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand124" type="Sprite2D" parent="Sands" unique_id=1938670297]
+position = Vector2(-64, -64)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand125" type="Sprite2D" parent="Sands" unique_id=1932262966]
+position = Vector2(-48, -64)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand126" type="Sprite2D" parent="Sands" unique_id=856884225]
+position = Vector2(-32, -64)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand127" type="Sprite2D" parent="Sands" unique_id=1111719091]
+position = Vector2(-48, -144)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand128" type="Sprite2D" parent="Sands" unique_id=1649543163]
+position = Vector2(-32, -144)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand129" type="Sprite2D" parent="Sands" unique_id=269475944]
+position = Vector2(-32, -128)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand130" type="Sprite2D" parent="Sands" unique_id=519988306]
+position = Vector2(-48, -128)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand131" type="Sprite2D" parent="Sands" unique_id=189350530]
+position = Vector2(-64, -128)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand132" type="Sprite2D" parent="Sands" unique_id=1988844056]
+position = Vector2(-64, -144)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand133" type="Sprite2D" parent="Sands" unique_id=659574608]
+position = Vector2(-64, -112)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand134" type="Sprite2D" parent="Sands" unique_id=1469632624]
+position = Vector2(-48, -112)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand135" type="Sprite2D" parent="Sands" unique_id=480265903]
+position = Vector2(-32, -112)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand136" type="Sprite2D" parent="Sands" unique_id=417859499]
+position = Vector2(0, -144)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand137" type="Sprite2D" parent="Sands" unique_id=1057187335]
+position = Vector2(16, -144)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand138" type="Sprite2D" parent="Sands" unique_id=2104537980]
+position = Vector2(16, -128)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand139" type="Sprite2D" parent="Sands" unique_id=1842387141]
+position = Vector2(0, -128)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand140" type="Sprite2D" parent="Sands" unique_id=1014837209]
+position = Vector2(-16, -128)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand141" type="Sprite2D" parent="Sands" unique_id=141911358]
+position = Vector2(-16, -144)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand142" type="Sprite2D" parent="Sands" unique_id=1833890127]
+position = Vector2(-16, -112)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand143" type="Sprite2D" parent="Sands" unique_id=98922940]
+position = Vector2(0, -112)
+texture = ExtResource("1_i6g32")
+
+[node name="Sand144" type="Sprite2D" parent="Sands" unique_id=1074134613]
+position = Vector2(16, -112)
+texture = ExtResource("1_i6g32")
+
+[node name="Corals" type="Node2D" parent="." unique_id=1761755340]
+
+[node name="Coral" type="StaticBody2D" parent="Corals" unique_id=1772792347]
+position = Vector2(0, -56)
+
+[node name="Coral" type="Sprite2D" parent="Corals/Coral" unique_id=1030860859]
+texture = ExtResource("5_wowpa")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Corals/Coral" unique_id=1413340799]
+shape = SubResource("RectangleShape2D_i6g32")
+
+[node name="Coral2" type="StaticBody2D" parent="Corals" unique_id=2003684010]
+position = Vector2(16, -56)
+
+[node name="Coral" type="Sprite2D" parent="Corals/Coral2" unique_id=781668505]
+texture = ExtResource("5_wowpa")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Corals/Coral2" unique_id=1763359746]
+shape = SubResource("RectangleShape2D_i6g32")
+
+[node name="Coral3" type="StaticBody2D" parent="Corals" unique_id=1587064811]
+position = Vector2(-16, -56)
+
+[node name="Coral" type="Sprite2D" parent="Corals/Coral3" unique_id=641295476]
+texture = ExtResource("5_wowpa")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Corals/Coral3" unique_id=312579240]
+shape = SubResource("RectangleShape2D_i6g32")
+
+[node name="Coral4" type="StaticBody2D" parent="Corals" unique_id=1973191966]
+position = Vector2(-32, -56)
+
+[node name="Coral" type="Sprite2D" parent="Corals/Coral4" unique_id=310313554]
+texture = ExtResource("5_wowpa")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Corals/Coral4" unique_id=1994054956]
+shape = SubResource("RectangleShape2D_i6g32")
+
+[node name="Coral5" type="StaticBody2D" parent="Corals" unique_id=1508681881]
+position = Vector2(32, -56)
+
+[node name="Coral" type="Sprite2D" parent="Corals/Coral5" unique_id=81225905]
+texture = ExtResource("5_wowpa")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Corals/Coral5" unique_id=26801970]
+shape = SubResource("RectangleShape2D_i6g32")
+
+[node name="Squid" type="CharacterBody2D" parent="." unique_id=229008149]
+position = Vector2(0, 136)
+script = ExtResource("1_3dryh")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Squid" unique_id=2010367242]
+sprite_frames = SubResource("SpriteFrames_i6g32")
+autoplay = "default"
+frame_progress = 0.28731623
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Squid" unique_id=1385449480]
+shape = SubResource("RectangleShape2D_1l0tm")
+
+[node name="Camera2D" type="Camera2D" parent="Squid" unique_id=1902126659]
