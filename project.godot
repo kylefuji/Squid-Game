@@ -29,4 +29,4 @@ window/stretch/scale_mode="integer"
 
 textures/canvas_textures/default_texture_filter=0
 rendering_device/driver.windows="d3d12"
-environment/defaults/default_clear_color=Color(0.1882353, 0.3764706, 0.50980395, 1)
+environment/defaults/default_clear_color=Color(0.35686275, 0.43137255, 0.88235295, 1)
