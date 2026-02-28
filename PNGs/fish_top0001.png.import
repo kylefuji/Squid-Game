@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://du4x226tcif3m"
-path="res://.godot/imported/sand-tiles.png-c421212595264b81fb12bbec1c55310f.ctex"
+uid="uid://m7am55h2eyqy"
+path="res://.godot/imported/fish_top0001.png-6d7e8413ef207e026c3ca011ef69ec6d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://PNGs/sand-tiles.png"
-dest_files=["res://.godot/imported/sand-tiles.png-c421212595264b81fb12bbec1c55310f.ctex"]
+source_file="res://PNGs/fish_top0001.png"
+dest_files=["res://.godot/imported/fish_top0001.png-6d7e8413ef207e026c3ca011ef69ec6d.ctex"]
 
 [params]
 

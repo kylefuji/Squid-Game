@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://w8oyfahm64cc"
-path="res://.godot/imported/sand_atlas.png-9b092e6b38d02fc2de5e42331862a5bb.ctex"
+uid="uid://cev8q2nbmk1rh"
+path="res://.godot/imported/fish_top0003.png-c053d03c4520042a6a8ca70c870b7820.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://PNGs/sand_atlas.png"
-dest_files=["res://.godot/imported/sand_atlas.png-9b092e6b38d02fc2de5e42331862a5bb.ctex"]
+source_file="res://PNGs/fish_top0003.png"
+dest_files=["res://.godot/imported/fish_top0003.png-c053d03c4520042a6a8ca70c870b7820.ctex"]
 
 [params]
 
