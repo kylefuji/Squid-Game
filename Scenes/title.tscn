@@ -1,0 +1,955 @@
+[gd_scene format=3 uid="uid://bym5baljnaayw"]
+
+[ext_resource type="Texture2D" uid="uid://dr1v7p0pra0h7" path="res://PNGs/letters/title/title_d.png" id="1_6aagf"]
+[ext_resource type="Script" uid="uid://bih7fek8xjn2c" path="res://Scripts/title.gd" id="1_gc12f"]
+[ext_resource type="Texture2D" uid="uid://d4dhhqmv4j2c1" path="res://PNGs/letters/title/title_f.png" id="2_kyk5u"]
+[ext_resource type="Texture2D" uid="uid://n4cmtsdqotm4" path="res://PNGs/letters/title/title_g.png" id="3_cwqts"]
+[ext_resource type="Texture2D" uid="uid://bvxll0hp88724" path="res://PNGs/letters/title/title_i.png" id="4_th2ad"]
+[ext_resource type="Texture2D" uid="uid://33trnngvv82i" path="res://PNGs/letters/title/title_l.png" id="5_qh4d7"]
+[ext_resource type="Texture2D" uid="uid://cb37y0tgaox4e" path="res://PNGs/letters/title/title_o.png" id="6_lv7gn"]
+[ext_resource type="Texture2D" uid="uid://t0at2f6pdqb6" path="res://PNGs/letters/title/title_q.png" id="7_5vuho"]
+[ext_resource type="Texture2D" uid="uid://vnruxybwwhce" path="res://PNGs/letters/title/title_s.png" id="8_ohkfa"]
+[ext_resource type="Texture2D" uid="uid://cnfak3y2plgg" path="res://PNGs/letters/title/title_u.png" id="9_ps378"]
+[ext_resource type="Texture2D" uid="uid://bagp2n56gj0rt" path="res://PNGs/squid/squid0008.png" id="11_yrftc"]
+[ext_resource type="Texture2D" uid="uid://c2s2oqgvxw31s" path="res://PNGs/squid/squid0000.png" id="12_v636t"]
+[ext_resource type="Texture2D" uid="uid://djrurmku88cnv" path="res://PNGs/squid/squid0001.png" id="13_6uh5d"]
+[ext_resource type="Texture2D" uid="uid://bdp2v04nrhhtl" path="res://PNGs/squid/squid0002.png" id="14_ugnon"]
+[ext_resource type="Texture2D" uid="uid://fob1xdtukb7p" path="res://PNGs/squid/squid0005.png" id="15_mg2ew"]
+[ext_resource type="Texture2D" uid="uid://djdyi8bepvcqq" path="res://PNGs/squid/squid0006.png" id="16_d16x5"]
+[ext_resource type="Texture2D" uid="uid://dttx21eg83c2i" path="res://PNGs/squid/squid0007.png" id="17_x4jox"]
+[ext_resource type="Texture2D" uid="uid://ok6td3jbwk1u" path="res://PNGs/squid/squid0003.png" id="18_snpp8"]
+[ext_resource type="Texture2D" uid="uid://cqjcxg5lcand5" path="res://PNGs/squid/squid0004.png" id="19_y2o84"]
+[ext_resource type="Texture2D" uid="uid://cpfogrktw6dme" path="res://PNGs/letters/r.png" id="20_5mnvh"]
+[ext_resource type="AudioStream" uid="uid://b2lnvnstaj455" path="res://Audio/A_music_2.wav" id="20_484xv"]
+[ext_resource type="Texture2D" uid="uid://yxnkh5ubyr7p" path="res://PNGs/letters/e.png" id="21_4iywc"]
+[ext_resource type="Texture2D" uid="uid://cxqykboqdc1hb" path="res://PNGs/letters/c.png" id="22_gc12f"]
+[ext_resource type="Texture2D" uid="uid://cdq1t6knjtpuh" path="res://PNGs/letters/a.png" id="23_mi30f"]
+[ext_resource type="Script" uid="uid://cxvnmnjl61up7" path="res://Scripts/intro_squid.gd" id="24_4iywc"]
+[ext_resource type="Texture2D" uid="uid://q7il0bls5otn" path="res://PNGs/letters/t.png" id="24_cmmc2"]
+[ext_resource type="Texture2D" uid="uid://rmoveaqbi4g4" path="res://PNGs/letters/d.png" id="25_50aho"]
+[ext_resource type="Texture2D" uid="uid://dvnclcp3cys06" path="res://PNGs/letters/b.png" id="26_6h30j"]
+[ext_resource type="Texture2D" uid="uid://b6s7aw17jsao0" path="res://PNGs/letters/y.png" id="27_kh8uo"]
+[ext_resource type="Texture2D" uid="uid://36m6alkws1ie" path="res://PNGs/letters/k.png" id="28_dojbg"]
+[ext_resource type="Texture2D" uid="uid://cl6wdbpjrt3g0" path="res://PNGs/letters/l.png" id="29_5auaw"]
+[ext_resource type="Texture2D" uid="uid://chj5l1aykrhex" path="res://PNGs/letters/f.png" id="30_i2afh"]
+[ext_resource type="Texture2D" uid="uid://kht0g8r23lud" path="res://PNGs/letters/u.png" id="31_yglx8"]
+[ext_resource type="Texture2D" uid="uid://c45eeujd2lpt7" path="res://PNGs/letters/j.png" id="32_ivfn3"]
+[ext_resource type="Texture2D" uid="uid://28jsefei2om" path="res://PNGs/letters/i.png" id="33_1utbv"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ko6av"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_yrftc")
+}],
+"loop": true,
+"name": &"dead",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_v636t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_6uh5d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_ugnon")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_6uh5d")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 2.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_mg2ew")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_d16x5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_x4jox")
+}],
+"loop": true,
+"name": &"moving",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_v636t")
+}],
+"loop": true,
+"name": &"sling0",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_6uh5d")
+}],
+"loop": true,
+"name": &"sling1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_ugnon")
+}],
+"loop": true,
+"name": &"sling2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_snpp8")
+}],
+"loop": true,
+"name": &"sling3",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("19_y2o84")
+}],
+"loop": true,
+"name": &"sling4",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8xvvu"]
+size = Vector2(32, 16)
+
+[node name="Title" type="Node2D" unique_id=746735094]
+script = ExtResource("1_gc12f")
+
+[node name="Title" type="Node2D" parent="." unique_id=1928992945]
+position = Vector2(0, -64)
+scale = Vector2(3, 3)
+
+[node name="TitleD" type="Sprite2D" parent="Title" unique_id=1651700365]
+position = Vector2(32, -8)
+texture = ExtResource("1_6aagf")
+
+[node name="TitleF" type="Sprite2D" parent="Title" unique_id=1405897486]
+position = Vector2(24, 8)
+texture = ExtResource("2_kyk5u")
+
+[node name="TitleG" type="Sprite2D" parent="Title" unique_id=1852325015]
+position = Vector2(-24, 8)
+texture = ExtResource("3_cwqts")
+
+[node name="TitleI" type="Sprite2D" parent="Title" unique_id=1172136126]
+position = Vector2(16, -8)
+texture = ExtResource("4_th2ad")
+
+[node name="TitleL" type="Sprite2D" parent="Title" unique_id=592628530]
+position = Vector2(8, 8)
+texture = ExtResource("5_qh4d7")
+
+[node name="TitleO" type="Sprite2D" parent="Title" unique_id=668769540]
+position = Vector2(-8, 8)
+texture = ExtResource("6_lv7gn")
+
+[node name="TitleQ" type="Sprite2D" parent="Title" unique_id=1533887591]
+position = Vector2(-16, -8)
+texture = ExtResource("7_5vuho")
+
+[node name="TitleS" type="Sprite2D" parent="Title" unique_id=439881029]
+position = Vector2(-32, -8)
+texture = ExtResource("8_ohkfa")
+
+[node name="TitleU" type="Sprite2D" parent="Title" unique_id=1064869897]
+position = Vector2(0, -8)
+texture = ExtResource("9_ps378")
+
+[node name="R" type="Sprite2D" parent="Title" unique_id=303847649]
+position = Vector2(-10.666667, 29.333334)
+scale = Vector2(0.33333334, 0.33333334)
+texture = ExtResource("20_5mnvh")
+
+[node name="E" type="Sprite2D" parent="Title" unique_id=199712787]
+position = Vector2(-5.3333335, 29.333334)
+scale = Vector2(0.33333334, 0.33333334)
+texture = ExtResource("21_4iywc")
+
+[node name="E2" type="Sprite2D" parent="Title" unique_id=511461856]
+position = Vector2(10.666667, 29.333334)
+scale = Vector2(0.33333334, 0.33333334)
+texture = ExtResource("21_4iywc")
+
+[node name="C" type="Sprite2D" parent="Title" unique_id=1787947906]
+position = Vector2(-16, 29.333334)
+scale = Vector2(0.33333334, 0.33333334)
+texture = ExtResource("22_gc12f")
+
+[node name="A" type="Sprite2D" parent="Title" unique_id=1540342007]
+position = Vector2(0, 29.333334)
+scale = Vector2(0.33333334, 0.33333334)
+texture = ExtResource("23_mi30f")
+
+[node name="T" type="Sprite2D" parent="Title" unique_id=954687377]
+position = Vector2(5.3333335, 29.333334)
+scale = Vector2(0.33333334, 0.33333334)
+texture = ExtResource("24_cmmc2")
+
+[node name="D" type="Sprite2D" parent="Title" unique_id=413336175]
+position = Vector2(16, 29.333334)
+scale = Vector2(0.33333334, 0.33333334)
+texture = ExtResource("25_50aho")
+
+[node name="B" type="Sprite2D" parent="Title" unique_id=1548943941]
+position = Vector2(-2.6666667, 34.666668)
+scale = Vector2(0.33333334, 0.33333334)
+texture = ExtResource("26_6h30j")
+
+[node name="Y" type="Sprite2D" parent="Title" unique_id=683819825]
+position = Vector2(2.6666667, 34.666668)
+scale = Vector2(0.33333334, 0.33333334)
+texture = ExtResource("27_kh8uo")
+
+[node name="K" type="Sprite2D" parent="Title" unique_id=1233626222]
+position = Vector2(-21.333334, 40)
+scale = Vector2(0.33333334, 0.33333334)
+texture = ExtResource("28_dojbg")
+
+[node name="Y2" type="Sprite2D" parent="Title" unique_id=2095307587]
+position = Vector2(-16, 40)
+scale = Vector2(0.33333334, 0.33333334)
+texture = ExtResource("27_kh8uo")
+
+[node name="L" type="Sprite2D" parent="Title" unique_id=286691720]
+position = Vector2(-10.666667, 40)
+scale = Vector2(0.33333334, 0.33333334)
+texture = ExtResource("29_5auaw")
+
+[node name="E3" type="Sprite2D" parent="Title" unique_id=734759860]
+position = Vector2(-5.3333335, 40)
+scale = Vector2(0.33333334, 0.33333334)
+texture = ExtResource("21_4iywc")
+
+[node name="F" type="Sprite2D" parent="Title" unique_id=1524348344]
+position = Vector2(5.3333335, 40)
+scale = Vector2(0.33333334, 0.33333334)
+texture = ExtResource("30_i2afh")
+
+[node name="U" type="Sprite2D" parent="Title" unique_id=889140429]
+position = Vector2(10.666667, 40)
+scale = Vector2(0.33333334, 0.33333334)
+texture = ExtResource("31_yglx8")
+
+[node name="J" type="Sprite2D" parent="Title" unique_id=598637622]
+position = Vector2(16, 40)
+scale = Vector2(0.33333334, 0.33333334)
+texture = ExtResource("32_ivfn3")
+
+[node name="I" type="Sprite2D" parent="Title" unique_id=849520262]
+position = Vector2(21.333334, 40)
+scale = Vector2(0.33333334, 0.33333334)
+texture = ExtResource("33_1utbv")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=971428310]
+
+[node name="Squid" type="CharacterBody2D" parent="." unique_id=197934690]
+position = Vector2(-216, 216)
+rotation = 1.5707964
+collision_mask = 3
+script = ExtResource("24_4iywc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Squid" unique_id=2086306263]
+rotation = -1.5707964
+sprite_frames = SubResource("SpriteFrames_ko6av")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Squid" unique_id=130632665]
+shape = SubResource("RectangleShape2D_8xvvu")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Squid" unique_id=751262144]
+stream = ExtResource("20_484xv")
+autoplay = true
+
+[node name="Squid2" type="CharacterBody2D" parent="." unique_id=113870148]
+position = Vector2(-168, 264)
+rotation = 1.5707964
+collision_mask = 3
+script = ExtResource("24_4iywc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Squid2" unique_id=537768264]
+rotation = -1.5707964
+sprite_frames = SubResource("SpriteFrames_ko6av")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Squid2" unique_id=830015749]
+shape = SubResource("RectangleShape2D_8xvvu")
+
+[node name="Squid3" type="CharacterBody2D" parent="." unique_id=66608748]
+position = Vector2(-208, 328)
+rotation = 1.5707964
+collision_mask = 3
+script = ExtResource("24_4iywc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Squid3" unique_id=1866734916]
+rotation = -1.5707964
+sprite_frames = SubResource("SpriteFrames_ko6av")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Squid3" unique_id=1414962569]
+shape = SubResource("RectangleShape2D_8xvvu")
+
+[node name="Squid4" type="CharacterBody2D" parent="." unique_id=376120121]
+position = Vector2(-240, 272)
+rotation = 1.5707964
+collision_mask = 3
+script = ExtResource("24_4iywc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Squid4" unique_id=996384249]
+rotation = -1.5707964
+sprite_frames = SubResource("SpriteFrames_ko6av")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Squid4" unique_id=1258190427]
+shape = SubResource("RectangleShape2D_8xvvu")
+
+[node name="Squid5" type="CharacterBody2D" parent="." unique_id=826877199]
+position = Vector2(-288, 216)
+rotation = 1.5707964
+collision_mask = 3
+script = ExtResource("24_4iywc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Squid5" unique_id=567759097]
+rotation = -1.5707964
+sprite_frames = SubResource("SpriteFrames_ko6av")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Squid5" unique_id=559900574]
+shape = SubResource("RectangleShape2D_8xvvu")
+
+[node name="Squid6" type="CharacterBody2D" parent="." unique_id=1190720202]
+position = Vector2(-240, 160)
+rotation = 1.5707964
+collision_mask = 3
+script = ExtResource("24_4iywc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Squid6" unique_id=1031366155]
+rotation = -1.5707964
+sprite_frames = SubResource("SpriteFrames_ko6av")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Squid6" unique_id=912939194]
+shape = SubResource("RectangleShape2D_8xvvu")
+
+[node name="Squid7" type="CharacterBody2D" parent="." unique_id=1296585212]
+position = Vector2(-208, 272)
+rotation = 1.5707964
+collision_mask = 3
+script = ExtResource("24_4iywc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Squid7" unique_id=1327609868]
+rotation = -1.5707964
+sprite_frames = SubResource("SpriteFrames_ko6av")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Squid7" unique_id=549362496]
+shape = SubResource("RectangleShape2D_8xvvu")
+
+[node name="Squid8" type="CharacterBody2D" parent="." unique_id=1790661096]
+position = Vector2(-248, 224)
+rotation = 1.5707964
+collision_mask = 3
+script = ExtResource("24_4iywc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Squid8" unique_id=1744969003]
+rotation = -1.5707964
+sprite_frames = SubResource("SpriteFrames_ko6av")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Squid8" unique_id=1844416500]
+shape = SubResource("RectangleShape2D_8xvvu")
+
+[node name="Squid9" type="CharacterBody2D" parent="." unique_id=2115266220]
+position = Vector2(-272, 328)
+rotation = 1.5707964
+collision_mask = 3
+script = ExtResource("24_4iywc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Squid9" unique_id=867678937]
+rotation = -1.5707964
+sprite_frames = SubResource("SpriteFrames_ko6av")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Squid9" unique_id=1111691843]
+shape = SubResource("RectangleShape2D_8xvvu")
+
+[node name="Squid10" type="CharacterBody2D" parent="." unique_id=141586076]
+position = Vector2(-288, 288)
+rotation = 1.5707964
+collision_mask = 3
+script = ExtResource("24_4iywc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Squid10" unique_id=952467740]
+rotation = -1.5707964
+sprite_frames = SubResource("SpriteFrames_ko6av")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Squid10" unique_id=1161852653]
+shape = SubResource("RectangleShape2D_8xvvu")
+
+[node name="Squid11" type="CharacterBody2D" parent="." unique_id=1606963851]
+position = Vector2(-336, 240)
+rotation = 1.5707964
+collision_mask = 3
+script = ExtResource("24_4iywc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Squid11" unique_id=1559066284]
+rotation = -1.5707964
+sprite_frames = SubResource("SpriteFrames_ko6av")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Squid11" unique_id=702172010]
+shape = SubResource("RectangleShape2D_8xvvu")
+
+[node name="Squid12" type="CharacterBody2D" parent="." unique_id=1306393921]
+position = Vector2(-304, 160)
+rotation = 1.5707964
+collision_mask = 3
+script = ExtResource("24_4iywc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Squid12" unique_id=492234448]
+rotation = -1.5707964
+sprite_frames = SubResource("SpriteFrames_ko6av")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Squid12" unique_id=1297300382]
+shape = SubResource("RectangleShape2D_8xvvu")
+
+[node name="Squid13" type="CharacterBody2D" parent="." unique_id=1823037880]
+position = Vector2(-256, 104)
+rotation = 1.5707964
+collision_mask = 3
+script = ExtResource("24_4iywc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Squid13" unique_id=1570732287]
+rotation = -1.5707964
+sprite_frames = SubResource("SpriteFrames_ko6av")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Squid13" unique_id=540755791]
+shape = SubResource("RectangleShape2D_8xvvu")
+
+[node name="Squid14" type="CharacterBody2D" parent="." unique_id=693592363]
+position = Vector2(-128, 336)
+rotation = 1.5707964
+collision_mask = 3
+script = ExtResource("24_4iywc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Squid14" unique_id=1187998675]
+rotation = -1.5707964
+sprite_frames = SubResource("SpriteFrames_ko6av")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Squid14" unique_id=648942742]
+shape = SubResource("RectangleShape2D_8xvvu")
+
+[node name="Squid15" type="CharacterBody2D" parent="." unique_id=1301276742]
+position = Vector2(-176, 184)
+rotation = 1.5707964
+collision_mask = 3
+script = ExtResource("24_4iywc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Squid15" unique_id=1899557243]
+rotation = -1.5707964
+sprite_frames = SubResource("SpriteFrames_ko6av")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Squid15" unique_id=791083680]
+shape = SubResource("RectangleShape2D_8xvvu")
+
+[node name="Squid16" type="CharacterBody2D" parent="." unique_id=240739989]
+position = Vector2(-176, 104)
+rotation = 1.5707964
+collision_mask = 3
+script = ExtResource("24_4iywc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Squid16" unique_id=550554433]
+rotation = -1.5707964
+sprite_frames = SubResource("SpriteFrames_ko6av")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Squid16" unique_id=200597476]
+shape = SubResource("RectangleShape2D_8xvvu")
+
+[node name="Squid17" type="CharacterBody2D" parent="." unique_id=1831622641]
+position = Vector2(-40, 336)
+rotation = 1.5707964
+collision_mask = 3
+script = ExtResource("24_4iywc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Squid17" unique_id=552145951]
+rotation = -1.5707964
+sprite_frames = SubResource("SpriteFrames_ko6av")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Squid17" unique_id=1451501261]
+shape = SubResource("RectangleShape2D_8xvvu")
+
+[node name="Squid18" type="CharacterBody2D" parent="." unique_id=1698348795]
+position = Vector2(-128, 392)
+rotation = 1.5707964
+collision_mask = 3
+script = ExtResource("24_4iywc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Squid18" unique_id=25943588]
+rotation = -1.5707964
+sprite_frames = SubResource("SpriteFrames_ko6av")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Squid18" unique_id=436764739]
+shape = SubResource("RectangleShape2D_8xvvu")
+
+[node name="Squid19" type="CharacterBody2D" parent="." unique_id=1905983530]
+position = Vector2(-224, 432)
+rotation = 1.5707964
+collision_mask = 3
+script = ExtResource("24_4iywc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Squid19" unique_id=2088483108]
+rotation = -1.5707964
+sprite_frames = SubResource("SpriteFrames_ko6av")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Squid19" unique_id=314914202]
+shape = SubResource("RectangleShape2D_8xvvu")
+
+[node name="Squid20" type="CharacterBody2D" parent="." unique_id=1894345493]
+position = Vector2(-256, 384)
+rotation = 1.5707964
+collision_mask = 3
+script = ExtResource("24_4iywc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Squid20" unique_id=1612046216]
+rotation = -1.5707964
+sprite_frames = SubResource("SpriteFrames_ko6av")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Squid20" unique_id=1643800151]
+shape = SubResource("RectangleShape2D_8xvvu")
+
+[node name="Squid21" type="CharacterBody2D" parent="." unique_id=2144188119]
+position = Vector2(-352, 336)
+rotation = 1.5707964
+collision_mask = 3
+script = ExtResource("24_4iywc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Squid21" unique_id=1838179560]
+rotation = -1.5707964
+sprite_frames = SubResource("SpriteFrames_ko6av")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Squid21" unique_id=1736160765]
+shape = SubResource("RectangleShape2D_8xvvu")
+
+[node name="Squid22" type="CharacterBody2D" parent="." unique_id=1338894624]
+position = Vector2(-408, 208)
+rotation = 1.5707964
+collision_mask = 3
+script = ExtResource("24_4iywc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Squid22" unique_id=1546051549]
+rotation = -1.5707964
+sprite_frames = SubResource("SpriteFrames_ko6av")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Squid22" unique_id=309329366]
+shape = SubResource("RectangleShape2D_8xvvu")
+
+[node name="Squid23" type="CharacterBody2D" parent="." unique_id=129425810]
+position = Vector2(-360, 144)
+rotation = 1.5707964
+collision_mask = 3
+script = ExtResource("24_4iywc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Squid23" unique_id=1096424255]
+rotation = -1.5707964
+sprite_frames = SubResource("SpriteFrames_ko6av")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Squid23" unique_id=1634717722]
+shape = SubResource("RectangleShape2D_8xvvu")
+
+[node name="Squid24" type="CharacterBody2D" parent="." unique_id=549187693]
+position = Vector2(-392, 64)
+rotation = 1.5707964
+collision_mask = 3
+script = ExtResource("24_4iywc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Squid24" unique_id=1385578136]
+rotation = -1.5707964
+sprite_frames = SubResource("SpriteFrames_ko6av")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Squid24" unique_id=1619907529]
+shape = SubResource("RectangleShape2D_8xvvu")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Squid24" unique_id=2059148547]
+stream = ExtResource("20_484xv")
+autoplay = true
+
+[node name="Squid25" type="CharacterBody2D" parent="." unique_id=1218481070]
+position = Vector2(-344, 112)
+rotation = 1.5707964
+collision_mask = 3
+script = ExtResource("24_4iywc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Squid25" unique_id=742242761]
+rotation = -1.5707964
+sprite_frames = SubResource("SpriteFrames_ko6av")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Squid25" unique_id=33263751]
+shape = SubResource("RectangleShape2D_8xvvu")
+
+[node name="Squid26" type="CharacterBody2D" parent="." unique_id=2057096588]
+position = Vector2(-384, 176)
+rotation = 1.5707964
+collision_mask = 3
+script = ExtResource("24_4iywc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Squid26" unique_id=1079791720]
+rotation = -1.5707964
+sprite_frames = SubResource("SpriteFrames_ko6av")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Squid26" unique_id=17817604]
+shape = SubResource("RectangleShape2D_8xvvu")
+
+[node name="Squid27" type="CharacterBody2D" parent="." unique_id=1792407005]
+position = Vector2(-416, 120)
+rotation = 1.5707964
+collision_mask = 3
+script = ExtResource("24_4iywc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Squid27" unique_id=380790658]
+rotation = -1.5707964
+sprite_frames = SubResource("SpriteFrames_ko6av")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Squid27" unique_id=610869453]
+shape = SubResource("RectangleShape2D_8xvvu")
+
+[node name="Squid28" type="CharacterBody2D" parent="." unique_id=1756265457]
+position = Vector2(-464, 64)
+rotation = 1.5707964
+collision_mask = 3
+script = ExtResource("24_4iywc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Squid28" unique_id=1729236413]
+rotation = -1.5707964
+sprite_frames = SubResource("SpriteFrames_ko6av")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Squid28" unique_id=1802777693]
+shape = SubResource("RectangleShape2D_8xvvu")
+
+[node name="Squid29" type="CharacterBody2D" parent="." unique_id=1666610126]
+position = Vector2(-416, 8)
+rotation = 1.5707964
+collision_mask = 3
+script = ExtResource("24_4iywc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Squid29" unique_id=1023667509]
+rotation = -1.5707964
+sprite_frames = SubResource("SpriteFrames_ko6av")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Squid29" unique_id=1647596389]
+shape = SubResource("RectangleShape2D_8xvvu")
+
+[node name="Squid30" type="CharacterBody2D" parent="." unique_id=182163465]
+position = Vector2(-384, 120)
+rotation = 1.5707964
+collision_mask = 3
+script = ExtResource("24_4iywc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Squid30" unique_id=1447771547]
+rotation = -1.5707964
+sprite_frames = SubResource("SpriteFrames_ko6av")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Squid30" unique_id=1663697908]
+shape = SubResource("RectangleShape2D_8xvvu")
+
+[node name="Squid31" type="CharacterBody2D" parent="." unique_id=344931619]
+position = Vector2(-424, 72)
+rotation = 1.5707964
+collision_mask = 3
+script = ExtResource("24_4iywc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Squid31" unique_id=548701948]
+rotation = -1.5707964
+sprite_frames = SubResource("SpriteFrames_ko6av")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Squid31" unique_id=1233534608]
+shape = SubResource("RectangleShape2D_8xvvu")
+
+[node name="Squid32" type="CharacterBody2D" parent="." unique_id=1156877829]
+position = Vector2(-448, 176)
+rotation = 1.5707964
+collision_mask = 3
+script = ExtResource("24_4iywc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Squid32" unique_id=1195692369]
+rotation = -1.5707964
+sprite_frames = SubResource("SpriteFrames_ko6av")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Squid32" unique_id=980745472]
+shape = SubResource("RectangleShape2D_8xvvu")
+
+[node name="Squid33" type="CharacterBody2D" parent="." unique_id=807860835]
+position = Vector2(-464, 136)
+rotation = 1.5707964
+collision_mask = 3
+script = ExtResource("24_4iywc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Squid33" unique_id=643603630]
+rotation = -1.5707964
+sprite_frames = SubResource("SpriteFrames_ko6av")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Squid33" unique_id=2081131546]
+shape = SubResource("RectangleShape2D_8xvvu")
+
+[node name="Squid34" type="CharacterBody2D" parent="." unique_id=714628224]
+position = Vector2(-512, 88)
+rotation = 1.5707964
+collision_mask = 3
+script = ExtResource("24_4iywc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Squid34" unique_id=1707160377]
+rotation = -1.5707964
+sprite_frames = SubResource("SpriteFrames_ko6av")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Squid34" unique_id=372827391]
+shape = SubResource("RectangleShape2D_8xvvu")
+
+[node name="Squid35" type="CharacterBody2D" parent="." unique_id=2023205624]
+position = Vector2(-480, 8)
+rotation = 1.5707964
+collision_mask = 3
+script = ExtResource("24_4iywc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Squid35" unique_id=758799770]
+rotation = -1.5707964
+sprite_frames = SubResource("SpriteFrames_ko6av")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Squid35" unique_id=1399899969]
+shape = SubResource("RectangleShape2D_8xvvu")
+
+[node name="Squid36" type="CharacterBody2D" parent="." unique_id=1577899390]
+position = Vector2(-432, -48)
+rotation = 1.5707964
+collision_mask = 3
+script = ExtResource("24_4iywc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Squid36" unique_id=627898210]
+rotation = -1.5707964
+sprite_frames = SubResource("SpriteFrames_ko6av")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Squid36" unique_id=1371190897]
+shape = SubResource("RectangleShape2D_8xvvu")
+
+[node name="Squid37" type="CharacterBody2D" parent="." unique_id=196178595]
+position = Vector2(-304, 184)
+rotation = 1.5707964
+collision_mask = 3
+script = ExtResource("24_4iywc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Squid37" unique_id=228588160]
+rotation = -1.5707964
+sprite_frames = SubResource("SpriteFrames_ko6av")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Squid37" unique_id=90418309]
+shape = SubResource("RectangleShape2D_8xvvu")
+
+[node name="Squid38" type="CharacterBody2D" parent="." unique_id=1928175146]
+position = Vector2(-352, 32)
+rotation = 1.5707964
+collision_mask = 3
+script = ExtResource("24_4iywc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Squid38" unique_id=1195402048]
+rotation = -1.5707964
+sprite_frames = SubResource("SpriteFrames_ko6av")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Squid38" unique_id=1047429678]
+shape = SubResource("RectangleShape2D_8xvvu")
+
+[node name="Squid39" type="CharacterBody2D" parent="." unique_id=420373876]
+position = Vector2(-352, -48)
+rotation = 1.5707964
+collision_mask = 3
+script = ExtResource("24_4iywc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Squid39" unique_id=990691367]
+rotation = -1.5707964
+sprite_frames = SubResource("SpriteFrames_ko6av")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Squid39" unique_id=180361466]
+shape = SubResource("RectangleShape2D_8xvvu")
+
+[node name="Squid40" type="CharacterBody2D" parent="." unique_id=1179217590]
+position = Vector2(-216, 184)
+rotation = 1.5707964
+collision_mask = 3
+script = ExtResource("24_4iywc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Squid40" unique_id=709203834]
+rotation = -1.5707964
+sprite_frames = SubResource("SpriteFrames_ko6av")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Squid40" unique_id=1917504015]
+shape = SubResource("RectangleShape2D_8xvvu")
+
+[node name="Squid41" type="CharacterBody2D" parent="." unique_id=919167173]
+position = Vector2(-304, 240)
+rotation = 1.5707964
+collision_mask = 3
+script = ExtResource("24_4iywc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Squid41" unique_id=461723323]
+rotation = -1.5707964
+sprite_frames = SubResource("SpriteFrames_ko6av")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Squid41" unique_id=1644500064]
+shape = SubResource("RectangleShape2D_8xvvu")
+
+[node name="Squid42" type="CharacterBody2D" parent="." unique_id=1936110726]
+position = Vector2(-400, 280)
+rotation = 1.5707964
+collision_mask = 3
+script = ExtResource("24_4iywc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Squid42" unique_id=1227691221]
+rotation = -1.5707964
+sprite_frames = SubResource("SpriteFrames_ko6av")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Squid42" unique_id=842184240]
+shape = SubResource("RectangleShape2D_8xvvu")
+
+[node name="Squid43" type="CharacterBody2D" parent="." unique_id=1722010766]
+position = Vector2(-432, 232)
+rotation = 1.5707964
+collision_mask = 3
+script = ExtResource("24_4iywc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Squid43" unique_id=1947283624]
+rotation = -1.5707964
+sprite_frames = SubResource("SpriteFrames_ko6av")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Squid43" unique_id=1335178553]
+shape = SubResource("RectangleShape2D_8xvvu")
+
+[node name="Squid44" type="CharacterBody2D" parent="." unique_id=1848291923]
+position = Vector2(-528, 184)
+rotation = 1.5707964
+collision_mask = 3
+script = ExtResource("24_4iywc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Squid44" unique_id=467189990]
+rotation = -1.5707964
+sprite_frames = SubResource("SpriteFrames_ko6av")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Squid44" unique_id=284589145]
+shape = SubResource("RectangleShape2D_8xvvu")
+
+[node name="Squid45" type="CharacterBody2D" parent="." unique_id=1676552427]
+position = Vector2(-584, 56)
+rotation = 1.5707964
+collision_mask = 3
+script = ExtResource("24_4iywc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Squid45" unique_id=289068633]
+rotation = -1.5707964
+sprite_frames = SubResource("SpriteFrames_ko6av")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Squid45" unique_id=1491201284]
+shape = SubResource("RectangleShape2D_8xvvu")
+
+[node name="Squid46" type="CharacterBody2D" parent="." unique_id=1899521263]
+position = Vector2(-536, -8)
+rotation = 1.5707964
+collision_mask = 3
+script = ExtResource("24_4iywc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Squid46" unique_id=825874980]
+rotation = -1.5707964
+sprite_frames = SubResource("SpriteFrames_ko6av")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Squid46" unique_id=389710581]
+shape = SubResource("RectangleShape2D_8xvvu")
+
+[node name="Timer" type="Timer" parent="." unique_id=83950436]
+wait_time = 4.5
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

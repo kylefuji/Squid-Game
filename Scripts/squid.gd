@@ -5,12 +5,15 @@ var mouse_hold:bool = false
 var moving:bool = false
 var in_sand:bool = false
 var in_bubbles:bool = false
+var in_flag:bool = false
 var distance_thresholds = [16, 32, 48, 64]
+var using_mouse:bool = true
 
 var speed:float = 10
 var original_speed:float = 0.0
 var max_speed:float = 669
 var speed_reduce:float = 500
+var flag_delta:float = 0
 
 func _ready() -> void:
 	original_speed = speed
@@ -30,9 +33,22 @@ func _physics_process(delta: float) -> void:
 			$AnimatedSprite2D.play("sling3")
 		else:
 			$AnimatedSprite2D.play("sling4")
-	
+	if using_mouse:
+		look_at(get_global_mouse_position())
+		
 	var joystick_velocity = Input.get_vector("move_left", "move_right", "move_up", "move_down")
 	
+	if in_flag:
+		flag_delta += delta
+		var target_pos = Vector2(
+			cos(flag_delta * 10) * 100, sin(flag_delta * 10) * 100
+		)
+		
+		look_at(global_position + target_pos)
+		moving = false
+		velocity = get_gravity() * delta
+		move_and_slide()
+		
 	if moving:
 		if in_sand and not in_bubbles:
 			speed_reduce = 1500
@@ -81,3 +97,9 @@ func _on_bubble_detector_body_entered(body: Node2D) -> void:
 
 func _on_bubble_detector_body_exited(body: Node2D) -> void:
 	in_bubbles = false
+
+
+func _on_flag_body_entered(body: Node2D) -> void:
+	if body == self:
+		speed = 0
+		in_flag = true
