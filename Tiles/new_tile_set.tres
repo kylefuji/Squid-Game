@@ -60,4 +60,5 @@ physics_layer_1/collision_layer = 4
 physics_layer_1/collision_mask = 0
 physics_layer_2/collision_layer = 8
 physics_layer_2/collision_mask = 0
+terrain_set_0/mode = 0
 sources/0 = SubResource("TileSetAtlasSource_tdm40")

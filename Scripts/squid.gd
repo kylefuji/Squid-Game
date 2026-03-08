@@ -6,10 +6,10 @@ var moving:bool = false
 var in_sand:bool = false
 var in_bubbles:bool = false
 var in_flag:bool = false
-var distance_thresholds = [16, 32, 48, 64]
+var distance_thresholds = [32, 64, 96, 128]
 var using_mouse:bool = true
 
-var speed:float = 10
+var speed:float = 5
 var original_speed:float = 0.0
 var max_speed:float = 669
 var speed_reduce:float = 500
@@ -72,9 +72,11 @@ func _input(event: InputEvent) -> void:
 			mouse_hold = true
 			start_mouse_distance = get_global_mouse_position().distance_to(position)
 		else:
-			$AnimatedSprite2D.play("moving")
 			mouse_hold = false
 			var current_mouse_distance:float = get_global_mouse_position().distance_to(position) - start_mouse_distance
+			if current_mouse_distance < distance_thresholds[0]:
+				return
+			$AnimatedSprite2D.play("moving")
 			speed = min(current_mouse_distance * original_speed, max_speed)
 			moving = true
 			
